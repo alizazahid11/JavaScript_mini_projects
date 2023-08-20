@@ -3,7 +3,16 @@ const display=document.getElementById("display");
 display.value="";
 }
 function addtodisplay(value){
-    let display=document.getElementById("diplay");
+    const display=document.getElementById("display");
     display.value+=value;
+    console.log("Value added:", value);
 
+}
+function tocalculate(){
+    const display=document.getElementById("display");
+    try{
+        display.value=eval(display.value);
+    }catch{
+        display.value="error"
+    }
 }
