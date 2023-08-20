@@ -1,5 +1,9 @@
-function clear(){
+function cleardisplay(){
 const display=document.getElementById("display");
-const clear=document.getElementsByClassName("clear");
 display.value="";
+}
+function addtodisplay(value){
+    let display=document.getElementById("diplay");
+    display.value+=value;
+
 }
