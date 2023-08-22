@@ -1,7 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #c26b6b;
     margin: 0;
     padding: 0;
     display: flex;
@@ -23,7 +23,7 @@ body {
 }
 
 #quoteButton {
-    background-color: #007bff;
+    background-color: #cb8b8b;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -33,5 +33,5 @@ body {
 }
 
 #quoteButton:hover {
-    background-color: #0056b3;
+    background-color: #ba3535;
 }
