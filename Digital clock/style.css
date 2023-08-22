@@ -1,22 +1,23 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #cf8787;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color:rgb(108, 108, 225)
 }
 
 .clock {
-    background-color: #fff;
+    background-color: #f8f8f8;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 #time {
-    font-size: 2rem;
+    font-size: 5rem;
 }
