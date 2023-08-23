@@ -1,11 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-color: #b03636;
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -28,11 +28,14 @@ main {
 }
 
 .task-container button {
-    background-color: #333;
+    background-color: #c94d4d;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
+}
+.task-container button:hover{
+    background-color: #b72d1e;
 }
 
 .task-list {
@@ -54,7 +57,7 @@ main {
 }
 
 .task-item button {
-    background-color: #e74c3c;
+    background-color: #b72d1e;
     color: #fff;
     border: none;
     padding: 0.2rem 0.5rem;
