@@ -27,7 +27,18 @@ const resultContainer = document.getElementById("resultContainer");
 const questionElement = document.getElementById("question");
 const optionsContainer = document.getElementById("optionsContainer");
 const nextButton = document.getElementById("nextButton");
-const scorelement=document.getElementById("finalscore")
+const scoreElement=document.getElementById("scoreElement")
+
+// Function to start the quiz
+function startQuiz() {
+    quizContainer.style.display = "block"; // Show the quiz container
+    resultContainer.style.display = "none"; // Hide the result container
+    showquestion(); // Show the first question
+}
+
+// Add event listener to the "Start Quiz" button
+const startButton = document.getElementById("submitButton");
+startButton.addEventListener("click", startQuiz);
 
 let currentquestion = 0;
 let score = 0;
@@ -48,12 +59,19 @@ if(selectedindex===questions[currentquestion].answer){
 }
 currentquestion++;
 if(currentquestion<questions.length){
-    displayQuestion();
+    showquestion();
 }else{
     showresult();
 }
 }
 function showresult(){
     resultContainer.style.display="block";
-    scorelement.textContent="`Your score: ${score} out of ${questions.length}`"
+    scoreElement.textContent=`Your score: ${score} out of ${questions.length}`;
 }
+nextButton.addEventListener("click",()=>{
+    currentquestion=0;
+    score=0;
+    showquestion();
+    resultContainer.style.display = "none"
+})
+showquestion();
