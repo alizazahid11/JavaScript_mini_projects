@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #c47f7f;
     margin: 0;
     padding: 0;
 }
@@ -11,6 +11,7 @@ body {
     padding: 20px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top:120px
 }
 
 .note-container {
@@ -18,7 +19,7 @@ body {
 }
 
 textarea {
-    width: 100%;
+    width: 90%;
     height: 100px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -28,10 +29,13 @@ textarea {
 button {
     margin-top: 10px;
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color:  #dc3545;
     border: none;
     color: white;
     cursor: pointer;
+}
+button:hover{
+    background-color:#c3708f;
 }
 
 ul {
