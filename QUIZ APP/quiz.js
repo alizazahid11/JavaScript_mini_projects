@@ -27,6 +27,7 @@ const resultContainer = document.getElementById("resultContainer");
 const questionElement = document.getElementById("question");
 const optionsContainer = document.getElementById("optionsContainer");
 const nextButton = document.getElementById("nextButton");
+const scorelement=document.getElementById("finalscore")
 
 let currentquestion = 0;
 let score = 0;
@@ -51,4 +52,8 @@ if(currentquestion<questions.length){
 }else{
     showresult();
 }
+}
+function showresult(){
+    resultContainer.style.display="block";
+    scorelement.textContent="`Your score: ${score} out of ${questions.length}`"
 }
