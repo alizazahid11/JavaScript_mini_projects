@@ -4,25 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Quiz App</title>
+    <title>Basic Quiz App</title>
 </head>
 <body>
-    <header>
-        <h1>Quiz App</h1>
-    </header>
-    <main>
-        <section class="quiz-creation">
-            <h2>Create Your Quiz</h2>
-            <!-- Form for creating a new quiz -->
-        </section>
-        <section class="quiz-list">
-            <h2>Quizzes</h2>
-            <!-- List of available quizzes -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Quiz App</p>
-    </footer>
+    <div class="quiz-container" id="quizContainer">
+        <h2 id="question">Question</h2>
+        <div class="options-container" id="optionsContainer">
+            <!-- Options will be added here dynamically -->
+        </div>
+        <button id="submitButton">Start Quiz</button>
+    </div>
+    <div class="result-container" id="resultContainer">
+        <h2>Quiz Result</h2>
+        <p id="finalScore">Your score will be displayed here</p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
