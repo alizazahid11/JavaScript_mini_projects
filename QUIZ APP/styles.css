@@ -5,13 +5,13 @@ body {
     background-color: #f3f3f3;
 }
 
-.quiz-container, .result-container {
-    display: none;
+ .quiz-container, .result-container {
+  
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 20px;
     margin: 20px;
-}
+} 
 
 .quiz-container button, .result-container button {
     padding: 8px 16px;
@@ -37,4 +37,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
+} 
