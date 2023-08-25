@@ -40,3 +40,15 @@ function showquestion() {
     The ${option} is a template string that inserts the option text into the HTML.
     join ensures that there are no extra separators between the HTML button strings.*/
 }
+function checkanswer(selectedindex){
+if(selectedindex===questions[currentquestion].answer){
+    score++;
+
+}
+currentquestion++;
+if(currentquestion<questions.length){
+    displayQuestion();
+}else{
+    showresult();
+}
+}
