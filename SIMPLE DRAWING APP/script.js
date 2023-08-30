@@ -10,7 +10,7 @@ function draw(e){
     if(!isdrawing)  return;
 context.lineWidth=5;// Brush size
 context.lineCap="round";//Rounded line endings
-context.strokeStyle="black";//brush color
+context.strokeStyle="pink";//brush color
 
    context.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop)
    context.stroke();//draws the line
