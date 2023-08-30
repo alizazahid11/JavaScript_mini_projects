@@ -1,0 +1,42 @@
+/* Reset some default styles */
+body, h1, p, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.slider-container {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}

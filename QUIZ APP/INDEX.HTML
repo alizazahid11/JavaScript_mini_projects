@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,18 +7,55 @@
     <title>Basic Quiz App</title>
 </head>
 <body>
-    <div class="quiz-container" id="quizContainer">
+    <div class="quiz-container" id="quizContainer" >
         <h2 id="question">Question</h2>
         <div class="options-container" id="optionsContainer">
-            <!-- Options will be added here dynamically -->
+            <!-- Options will be added here dynamically 
         </div>
         <button id="submitButton" >Start Quiz</button>
     </div>
-    <div class="result-container" id="resultContainer">
+    <div class="result-container" id="resultContainer"  style="display: none;">
         <h2 >Quiz Result</h2>
         <p id="scoreElement" >Your score will be displayed here</p>
         <button id="nextButton">Next</button>
     </div>
     <script src="quiz.js"></script>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <header>
+        <h1>Quiz App</h1>
+    </header>
+    <main>
+        <section class="quiz-creation">
+            <h2>Create Your Quiz</h2>
+            <form id="quizForm">
+                <label for="question">Question:</label>
+                <input type="text" id="question" required>
+                <label for="options">Options (comma-separated):</label>
+                <input type="text" id="options" required>
+                <label for="correctIndex">Correct Option Index:</label>
+                <input type="number" id="correctIndex" required>
+                <button type="button" id="addQuestion">Add Question</button>
+            </form>
+        </section>
+        <section class="quiz-list">
+            <h2>Quizzes</h2>
+            <ul id="quizList"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Quiz App</p>
+    </footer>
+    <script src="quiz.js"></script>
+</body>
 </html>
+
